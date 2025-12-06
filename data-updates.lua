@@ -302,48 +302,48 @@ end
 ------------------------------------------
 
 -- Electric Locomotive
-table.insert(data.raw["recipe"]["recipe-electric-locomotive"].ingredients, {
+table.insert(data.raw["recipe"]["electric-locomotive"].ingredients, {
     type = "item",
     name = "steel-plate",
     amount = 40
 })
-table.insert(data.raw["recipe"]["recipe-electric-locomotive"].ingredients, {
+table.insert(data.raw["recipe"]["electric-locomotive"].ingredients, {
     type = "item",
     name = "electric-engine-unit",
     amount = 50
 })
 
 -- Electric Locomotive Wagon
-table.insert(data.raw["recipe"]["recipe-electric-locomotive-wagon"].ingredients, {
+table.insert(data.raw["recipe"]["electric-locomotive-wagon"].ingredients, {
     type = "item",
     name = "steel-plate",
     amount = 40
 })
-table.insert(data.raw["recipe"]["recipe-electric-locomotive-wagon"].ingredients, {
+table.insert(data.raw["recipe"]["electric-locomotive-wagon"].ingredients, {
     type = "item",
     name = "electric-engine-unit",
     amount = 50
 })
 
 -- Electric Cargo Wagon
-table.insert(data.raw["recipe"]["recipe-electric-cargo-wagon"].ingredients, {
+table.insert(data.raw["recipe"]["electric-cargo-wagon"].ingredients, {
     type = "item",
     name = "steel-plate",
     amount = 40
 })
-table.insert(data.raw["recipe"]["recipe-electric-cargo-wagon"].ingredients, {
+table.insert(data.raw["recipe"]["electric-cargo-wagon"].ingredients, {
     type = "item",
     name = "electric-engine-unit",
     amount = 5
 })
 
 -- Electric Fluid Wagon
-table.insert(data.raw["recipe"]["recipe-electric-fluid-wagon"].ingredients, {
+table.insert(data.raw["recipe"]["electric-fluid-wagon"].ingredients, {
     type = "item",
     name = "steel-plate",
     amount = 40
 })
-table.insert(data.raw["recipe"]["recipe-electric-fluid-wagon"].ingredients, {
+table.insert(data.raw["recipe"]["electric-fluid-wagon"].ingredients, {
     type = "item",
     name = "electric-engine-unit",
     amount = 5
@@ -357,13 +357,13 @@ data:extend({{
     icon_size = 256,
     effects = {{
         type = "unlock-recipe",
-        recipe = "recipe-electric-locomotive"
+        recipe = "electric-locomotive"
     }, {
         type = "unlock-recipe",
-        recipe = "recipe-electric-fluid-wagon"
+        recipe = "electric-fluid-wagon"
     }, {
         type = "unlock-recipe",
-        recipe = "recipe-electric-cargo-wagon"
+        recipe = "electric-cargo-wagon"
     }, {
         type = "unlock-recipe",
         recipe = "electric-train-battery-charging-station"
@@ -393,7 +393,7 @@ data:extend({{
     icon_size = 256,
     effects = {{
         type = "unlock-recipe",
-        recipe = "recipe-electric-train-alkaline-battery-pack"
+        recipe = "electric-train-alkaline-battery-pack"
     }},
     prerequisites = {"tech-electric-trains"},
     unit = {
@@ -463,7 +463,7 @@ data:extend({{
     icon_size = 256,
     effects = {{
         type = "unlock-recipe",
-        recipe = "recipe-electric-locomotive-wagon"
+        recipe = "electric-locomotive-wagon"
     }},
     prerequisites = {"tech-electric-trains"},
     unit = {
@@ -482,7 +482,7 @@ data:extend({{
     icon_size = 256,
     effects = {{
         type = "unlock-recipe",
-        recipe = "recipe-electric-artillery-wagon"
+        recipe = "electric-artillery-wagon"
     }},
     prerequisites = {"tech-electric-trains", "artillery"},
     unit = {
@@ -767,7 +767,7 @@ if mods["space-exploration"] or (mods["space-age"] and settings.startup["lock-be
     -- Replace all processing units with advanced circuits, since blue chips are much  harder to get in SE.
     data:extend({{
         type = "recipe",
-        name = "recipe-electric-locomotive",
+        name = "electric-locomotive",
         ingredients = {{
             type = "item",
             name = "steel-plate",
@@ -793,7 +793,7 @@ if mods["space-exploration"] or (mods["space-age"] and settings.startup["lock-be
         enabled = false
     }})
     -- Electric Locomotive Wagon
-    data.raw["recipe"]["recipe-electric-locomotive-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-locomotive-wagon"].ingredients = {{
         type = "item",
         name = "steel-plate",
         amount = 40
@@ -812,7 +812,7 @@ if mods["space-exploration"] or (mods["space-age"] and settings.startup["lock-be
     }}
 
     -- Electric Cargo Wagon
-    data.raw["recipe"]["recipe-electric-cargo-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-cargo-wagon"].ingredients = {{
         type = "item",
         name = "steel-plate",
         amount = 40
@@ -831,7 +831,7 @@ if mods["space-exploration"] or (mods["space-age"] and settings.startup["lock-be
     }}
 
     -- Electric Artillery Wagon
-    data.raw["recipe"]["recipe-electric-artillery-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-artillery-wagon"].ingredients = {{
         type = "item",
         name = "artillery-wagon",
         amount = 1
@@ -859,7 +859,7 @@ if mods["space-exploration"] or (mods["space-age"] and settings.startup["lock-be
     }}
 
     -- Electric Fluid Wagon
-    data.raw["recipe"]["recipe-electric-fluid-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-fluid-wagon"].ingredients = {{
         type = "item",
         name = "steel-plate",
         amount = 40
@@ -971,9 +971,9 @@ elseif mods["space-age"] and settings.startup["lock-behind-fulgora"].value == "t
         data.raw["item"]["electric-train-destroyed-battery-pack"].weight = 10 * kg
     end
     -- ----------------- Change the recipes now to use the electromagentics facility ---------------- --
-    data.raw["recipe"]["recipe-electric-locomotive"].category = "electromagnetics"
-    data.raw["recipe"]["recipe-electric-locomotive"].allow_productivity = true
-    data.raw["recipe"]["recipe-electric-locomotive"].ingredients = {{
+    data.raw["recipe"]["electric-locomotive"].category = "electromagnetics"
+    data.raw["recipe"]["electric-locomotive"].allow_productivity = true
+    data.raw["recipe"]["electric-locomotive"].ingredients = {{
         type = "item",
         name = "steel-plate",
         amount = 40
@@ -998,9 +998,9 @@ elseif mods["space-age"] and settings.startup["lock-behind-fulgora"].value == "t
         name = "supercapacitor",
         amount = 5
     }}
-    data.raw["recipe"]["recipe-electric-locomotive-wagon"].category = "electromagnetics"
-    data.raw["recipe"]["recipe-electric-locomotive-wagon"].allow_productivity = true
-    data.raw["recipe"]["recipe-electric-locomotive-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-locomotive-wagon"].category = "electromagnetics"
+    data.raw["recipe"]["electric-locomotive-wagon"].allow_productivity = true
+    data.raw["recipe"]["electric-locomotive-wagon"].ingredients = {{
         type = "item",
         name = "steel-plate",
         amount = 40
@@ -1025,9 +1025,9 @@ elseif mods["space-age"] and settings.startup["lock-behind-fulgora"].value == "t
         name = "supercapacitor",
         amount = 5
     }}
-    data.raw["recipe"]["recipe-electric-artillery-wagon"].category = "electromagnetics"
-    data.raw["recipe"]["recipe-electric-artillery-wagon"].allow_productivity = true
-    data.raw["recipe"]["recipe-electric-artillery-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-artillery-wagon"].category = "electromagnetics"
+    data.raw["recipe"]["electric-artillery-wagon"].allow_productivity = true
+    data.raw["recipe"]["electric-artillery-wagon"].ingredients = {{
         type = "item",
         name = "artillery-wagon",
         amount = 1
@@ -1061,9 +1061,9 @@ elseif mods["space-age"] and settings.startup["lock-behind-fulgora"].value == "t
         name = "supercapacitor",
         amount = 1
     }}
-    data.raw["recipe"]["recipe-electric-cargo-wagon"].category = "electromagnetics"
-    data.raw["recipe"]["recipe-electric-cargo-wagon"].allow_productivity = true
-    data.raw["recipe"]["recipe-electric-cargo-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-cargo-wagon"].category = "electromagnetics"
+    data.raw["recipe"]["electric-cargo-wagon"].allow_productivity = true
+    data.raw["recipe"]["electric-cargo-wagon"].ingredients = {{
         type = "item",
         name = "steel-plate",
         amount = 20
@@ -1088,8 +1088,8 @@ elseif mods["space-age"] and settings.startup["lock-behind-fulgora"].value == "t
         name = "supercapacitor",
         amount = 1
     }}
-    data.raw["recipe"]["recipe-electric-fluid-wagon"].category = "electromagnetics"
-    data.raw["recipe"]["recipe-electric-fluid-wagon"].ingredients = {{
+    data.raw["recipe"]["electric-fluid-wagon"].category = "electromagnetics"
+    data.raw["recipe"]["electric-fluid-wagon"].ingredients = {{
         type = "item",
         name = "steel-plate",
         amount = 20
@@ -1173,10 +1173,10 @@ elseif mods["space-age"] and settings.startup["lock-behind-fulgora"].value == "t
         amount = 2
     }}
     -- alkaline powerpacks
-    data.raw["recipe"]["recipe-electric-train-alkaline-battery-pack"].allow_productivity = true
-    data.raw["recipe"]["recipe-electric-train-alkaline-battery-pack"].subgroup = "fulgora-processes"
-    data.raw["recipe"]["recipe-electric-train-alkaline-battery-pack"].category = "electromagnetics"
-    data.raw["recipe"]["recipe-electric-train-alkaline-battery-pack"].ingredients = {{
+    data.raw["recipe"]["electric-train-alkaline-battery-pack"].allow_productivity = true
+    data.raw["recipe"]["electric-train-alkaline-battery-pack"].subgroup = "fulgora-processes"
+    data.raw["recipe"]["electric-train-alkaline-battery-pack"].category = "electromagnetics"
+    data.raw["recipe"]["electric-train-alkaline-battery-pack"].ingredients = {{
         type = "item",
         name = "supercapacitor",
         amount = 1

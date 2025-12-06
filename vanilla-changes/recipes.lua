@@ -3,7 +3,7 @@
 ---------------------
 data:extend({{
     type = "recipe",
-    name = "recipe-electric-locomotive",
+    name = "electric-locomotive",
     energy_required = 60,
     enabled = false,
     ingredients = {{
@@ -24,7 +24,7 @@ data:extend({{
 }, -- Electric Wagon Locomotive
 {
     type = "recipe",
-    name = "recipe-electric-locomotive-wagon",
+    name = "electric-locomotive-wagon",
     energy_required = 60,
     enabled = false,
     ingredients = {{
@@ -44,7 +44,7 @@ data:extend({{
     order = "c[rolling-stock]-f[locomotiveb]"
 }, {
     type = "recipe",
-    name = "recipe-electric-cargo-wagon",
+    name = "electric-cargo-wagon",
     energy_required = 60,
     enabled = false,
     ingredients = {{
@@ -64,7 +64,7 @@ data:extend({{
     order = "c[rolling-stock]-h[cargo-wagon]"
 }, {
     type = "recipe",
-    name = "recipe-electric-fluid-wagon",
+    name = "electric-fluid-wagon",
     energy_required = 60,
     enabled = false,
     ingredients = {{
@@ -84,7 +84,7 @@ data:extend({{
     order = "c[rolling-stock]-h[fluid-wagon]"
 }, {
     type = "recipe",
-    name = "recipe-electric-artillery-wagon",
+    name = "electric-artillery-wagon",
     energy_required = 60,
     enabled = false,
     ingredients = {{
@@ -194,7 +194,7 @@ data:extend({{
     order = "s-[battery-pack-a]"
 }, {
     type = "recipe",
-    name = "recipe-electric-train-alkaline-battery-pack",
+    name = "electric-train-alkaline-battery-pack",
     category = "advanced-crafting",
     energy_required = 10,
     enabled = false,
