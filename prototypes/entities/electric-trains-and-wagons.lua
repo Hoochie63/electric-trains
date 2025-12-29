@@ -104,10 +104,6 @@ electric_locomotive.energy_source = {
     fuel_inventory_size = 3,
     burnt_inventory_size = 3
 }
-electric_locomotive.front_light[1].intensity = 0.8
-electric_locomotive.front_light[1].color = electric_train_front_light_color
-electric_locomotive.front_light[2].intensity = 0.8
-electric_locomotive.front_light[2].color = electric_train_front_light_color
 electric_locomotive.pictures.rotated.layers =
 {
     {
@@ -220,6 +216,13 @@ electric_locomotive.drive_over_tie_trigger_minimal_speed = nil
 electric_locomotive.tie_distance = nil
 electric_locomotive.working_sound.main_sounds[2].sound.filename = sound_path .. "space-train-engine.ogg"
 electric_locomotive.working_sound.main_sounds[2].sound.volume = 0.4
+
+if not mods["realistic-flashlight-fixed"] then
+    electric_locomotive.front_light[1].intensity = 0.8
+    electric_locomotive.front_light[1].color = electric_train_front_light_color
+    electric_locomotive.front_light[2].intensity = 0.8
+    electric_locomotive.front_light[2].color = electric_train_front_light_color
+end
 
 data:extend { electric_locomotive }
 
