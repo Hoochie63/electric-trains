@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 02. 06. 2026
+  Info:
+    - Updated RU locale. Thanks to umbraphile for the PR
+    - Consolidated factoripedia cards. Thanks to Hoochie63 for the PR
+---------------------------------------------------------------------------------------------------
 Version: 0.4.2
 Date: 23. 09. 2025
   Bugfixes:
