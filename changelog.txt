@@ -1,21 +1,13 @@
----------------------------------------------------------------------------------------------------
-Version: 0.4.5
-Date: 06. 01. 2025
-  Features:
-    - Changed icons to overlay, added numeric icons to differentiate battery types.
----------------------------------------------------------------------------------------------------
-Version: 0.4.4
-Date: 29. 12. 2025
+Version: 0.4.3
+Date: 02. 06. 2026
+  Info:
+    - Updated RU locale. Thanks to umbraphile for the PR
+    - Consolidated factoripedia cards. Thanks to Hoochie63 for the PR for this and the below features    
   Features:
     - Complete code refactoring for improved readability and maintainability. The code is now more logically structured.
     - Minor changes have been made to recipes.
     - Icons have been updated to make battery statuses more understandable.
     - Significant graphics compression and optimization.
----------------------------------------------------------------------------------------------------
-Version: 0.4.3
-Date: 06. 12. 2025
-  Bugfixes:
-    - Combining cards in Factoriopedia
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.2
 Date: 23. 09. 2025
